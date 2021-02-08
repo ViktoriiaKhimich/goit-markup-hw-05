@@ -237,6 +237,8 @@ img {
 }
 
 .contact-nav .link {
+  display: flex;
+  align-items: center;
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -270,11 +272,11 @@ img {
   transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
-.item:hover .icon-envelope {
+.mail:hover .icon-envelope {
   fill: var(--accent-color);
 }
 
-.item:hover .icon-smartphone {
+.tel:hover .icon-smartphone {
   fill: var(--accent-color);
 }
 /* FOOTER */
@@ -285,11 +287,11 @@ img {
 
 .contacts-box {
   width: 270px;
-  margin-right: 70px;
 }
 
 .footer .container {
   display: flex;
+  justify-content: space-between;
   align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
@@ -309,7 +311,6 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
-  margin-bottom: 9px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -324,6 +325,7 @@ img {
   line-height: 1.7;
   letter-spacing: 0.03em;
   text-decoration: none;
+  margin-top: 9px;
 
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
@@ -333,6 +335,10 @@ img {
   color: var(--accent-color);
 }
 
+.social-list-box {
+  width: 270px;
+}
+
 .call-to-action {
   color: var(--white-color);
   font-size: 14px;
@@ -340,11 +346,11 @@ img {
   line-height: 1.17;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 .footer .social-links-list {
   display: flex;
-  margin-top: 20px;
 }
 
 .footer .social-link {
@@ -359,4 +365,59 @@ img {
 
 .footer .social-list-icon {
   fill: var(--white-color);
+}
+
+.subscribe-box {
+  width: 570px;
+}
+
+.subscribe-form {
+  display: flex;
+  justify-content: center;
+}
+.subscribe-input {
+  width: 358px;
+  height: 50px;
+  color: var(--white-color);
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 12px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  padding-left: 16px;
+}
+
+.submit-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--white-color);
+  background-color: var(--accent-color);
+  text-decoration: none;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 1px solid transparent;
+  min-width: 200px;
+
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.submit-button:hover,
+.submit-button:focus {
+  background-color: rgba(24, 140, 232, 1);
+}
+
+.send-icon {
+  width: 24px;
+  height: 24px;
+  fill: var(--white-color);
+  margin-left: 10px;
 }
